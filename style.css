@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(235, 18%, 26%);
+    font-family: 'Roboto', sans-serif;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+}
+
+.text-content{
+    padding: 3.2rem 25px 15px 40px;
+}
+
+h1{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+p{
+    color: hsl(231, 7%, 60%);
+    padding-top: 20px;
+}
+
+ul{
+    color: hsl(231, 7%, 60%);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+li{
+    background: url("./assets/images/icon-list.svg") no-repeat left;
+    background-size: 14px;
+    height: 14px;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+h5{
+    padding-top: 20px;
+    padding-bottom: 3px;
+    font-size: 0.8rem;
+}
+
+h5>span{
+    color: hsl(4, 91%, 54%);
+    font-size: 10px;
+    margin-left: 100px;
+}
+
+input{
+    height: 40px;
+    width: 94%;
+    padding-left: 10px;
+    opacity: 60%;
+    border-radius: 6px;
+    border: 1px solid rgb(117, 117, 117);
+    font-size: 15px;
+}
+
+button{
+    height: 45px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius:6px;
+}
+
+.illustration{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop-image{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.mobile-image{
+    display: none;
+}
+
+/* succes-card css */
+.end-container{
+    background-color: white;
+    width: 25%;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 30px;
+}
+
+.success-img{
+    height: 50px;
+    width: 50px;
+}
+
+.end-container p{
+    font-size: 14px;
+    color: hsl(240, 4%, 33%);
+    padding: 0;
+}
+.end-container span{
+    color: hsl(240, 2%, 8%);
+    font-weight: 800;
+}
+.hide{
+    display: none;
+}
+
+.invalid{
+    border: 1px solid hsl(4, 95%, 61%);
+    color: hsl(4, 91%, 54%);
+    background-color: hsla(4, 95%, 61%, 0.568);
+    opacity: 80%;
+}
+
+@media (hover: hover)  {
+    button:hover{
+        background: linear-gradient(to right,hsl(345.78,100%,66.08%),hsl(4, 100%, 67%));
+        box-shadow: 0 4px 20px 0px hsl(4, 100%, 67%);
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:450px) and (orientation: portrait){
+
+    .main-container{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+    }
+    .illustration{
+        order: -1;
+        padding: 0;
+    }
+    .desktop-image{
+        display: none;
+    }
+    .mobile-image{
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+    .text-content{
+        padding: 30px 25px 25px 25px;
+    }
+    p{
+        color: hsl(240, 4%, 38%);
+        padding-top: 20px;
+        font-size: 16px;
+    }
+    ul{
+        color: hsl(240, 4%, 38%);
+        font-size: 16px;
+    }
+    li{
+        background-size: 18px;
+        height: 18px;
+    }
+    input{
+        width: 95%;
+        padding-left: 10px;
+    }
+    button{
+        height: 45px;
+        margin-top: 15px;
+    }
+    h5{
+        padding-top: 25px;
+    }
+    .end-container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .success-img{
+        padding-bottom: 10px;
+        height: 60px;
+        width: 60px;
+    }
+    
+    .end-container p{
+        font-size: 16px;
+    }
+    .end-container button{
+        margin-top: 220px;
+        height: 50px;
+    }
+    h5>span{
+        margin-left: 150px;
+    }
+}

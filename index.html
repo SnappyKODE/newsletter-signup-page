@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+  <div class="main-container">
+
+    <div class="text-content">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+      <li>  Product discovery and building what matters</li>
+      <li>  Measuring to ensure updates are a success</li>
+      <li>  And much more!</li>
+      </ul>
+      <h5>Email address<span class="hide">Valid Email Required</span></h5>
+      <input type="email" id="mail" placeholder="email@company.com">
+      <button class="submit">Subscribe to monthly newsletter</button>
+    </div>
+
+    <div class="illustration">
+      <img class="desktop-image" src="./assets/images/illustration-sign-up-desktop.svg" alt="image">
+      <img class="mobile-image" src="./assets/images/illustration-sign-up-mobile.svg" alt="image">
+    </div>
+  </div>
+
+  <div class="end-container hide">
+    <img class="success-img" src="./assets/images/icon-success.svg" alt="">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span>@loremcompany.com</span>. 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button>Dismiss message</button>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
